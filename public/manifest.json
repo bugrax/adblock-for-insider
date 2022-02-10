@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Adblock for Business Insider",
+  "version": "0.1",
+  "description": "Adblock and Free Limit Remover",
+  "permissions": [],
+  "host_permissions": ["*://*.businessinsider.com/*"],
+  "author": "Diablo",
+  "short_name": "Adblock for Exxen",
+  "content_scripts": [
+    {
+      "matches": ["*://*.businessinsider.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Adblock for Business Insider",
+    "default_icon": {
+      "16": "/images/logo-16.png",
+      "32": "/images/logo-32.png",
+      "48": "/images/logo-48.png",
+      "128": "/images/logo-128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/logo-16.png",
+    "32": "/images/logo-32.png",
+    "48": "/images/logo-48.png",
+    "128": "/images/logo-128.png"
+  }
+}
